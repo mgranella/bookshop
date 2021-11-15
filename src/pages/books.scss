@@ -1,0 +1,57 @@
+.books-page {
+
+    font-style: oblique;
+
+    .booksList-div {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px;
+    }
+  
+    .book-div {
+        width: 200px;
+        padding: 3px;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;            
+  
+      &:hover {
+        cursor: pointer;
+        border-style: solid;
+        border-color: rgb(88, 136, 168);
+        border-width: 3px;   
+      }
+  
+      .image {
+        max-height: 150px;      
+        justify-content: center; 
+        
+        display: flex;
+        justify-content: center;
+      }
+  
+      .title {
+        max-height: 80px;
+        overflow: hidden;
+
+        text-align: center;
+        font-size: 16px;
+      }
+    }
+  
+    .footer {
+        text-align: center;
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            padding: 15px 32px;
+            font-size: 16px;
+            margin: 5px 5px;
+            cursor: pointer;
+        }
+    }
+  }
+  
