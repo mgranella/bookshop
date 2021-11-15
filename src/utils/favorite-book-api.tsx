@@ -1,7 +1,7 @@
 const baseUrl = "http://localhost:3099/api/books";
 
 export async function getFavoriteBook(user:string, bookid:number):Promise<boolean> { 
-    const fullUrl = baseUrl + `/${encodeURIComponent(user)}-${bookid}`;
+    const fullUrl = baseUrl + `?user=${encodeURIComponent(user)}&bookid=${bookid}`;
     const favoriteBook = await ( await fetch(fullUrl, { method: "GET" })).json();
 
     if(favoriteBook.favorite != undefined && favoriteBook.favorite){
